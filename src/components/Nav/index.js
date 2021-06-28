@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-  
   const {
     categories = [],
     setCurrentCategory,
