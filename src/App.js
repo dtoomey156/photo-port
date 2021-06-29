@@ -30,11 +30,11 @@ function App() {
       ></Nav>
       <main>
         {!contactSelected ? (
-          <>
-          <Gallery currentCategory={currentCategory}>
-          </Gallery>
-          <About></About>
-          </>
+          <React.Fragment>
+            <Gallery currentCategory={currentCategory}>
+            </Gallery>
+            <About></About>
+          </React.Fragment>
         ) : (
           <ContactForm></ContactForm>
         )}
